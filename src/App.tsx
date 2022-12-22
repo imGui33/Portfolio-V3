@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import WebInterface from "./Components/WebInterface";
+import { GlobalStyles } from "./global/style";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <h1>Hello World!</h1>
-  )
+    <>
+      <GlobalStyles />
+
+      <WebInterface />
+    </>
+  );
 }
 
-export default App
+export default App;

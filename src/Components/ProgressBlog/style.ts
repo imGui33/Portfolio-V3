@@ -6,5 +6,6 @@ export const ProgressContainer = styled.div`
     height: 6px;
     .progress-line{
         height: 100px;
+        background-color: var(--gray-300);
     }
 `;
