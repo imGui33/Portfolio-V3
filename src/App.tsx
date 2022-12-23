@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Navbar from "./Components/Navbar";
 import ProgressBlog from "./Components/ProgressBlog";
 import Rotas from "./Components/Routes";
 import { GlobalStyles } from "./global/style";
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <>
+    <Navbar />
       <ProgressBlog />
       <GlobalStyles />
       <Rotas />

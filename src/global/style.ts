@@ -7,11 +7,14 @@ export const GlobalStyles = createGlobalStyle`
         --gray-100:#bec3bc;
         --gray-200: #8f9a9c;
         --gray-300: #65727a;
+        --black-200: #2c2f33;
+        --black-300: #23272a;
     }
     *{
         margin:0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
     *,input, button {
         border: none;

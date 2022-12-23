@@ -1,11 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProgressContainer = styled.div`
-    position: fixed;
-    width: 100%;
-    height: 6px;
-    .progress-line{
-        height: 100%;
-        background-color: var(--gray-300);
-    }
+  position: fixed;
+  z-index: 3;
+
+  width: 100%;
+  height: 6px;
+  .progress-line {
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--black-300);
+  }
 `;
