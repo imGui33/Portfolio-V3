@@ -5,7 +5,7 @@ import { Container } from "./style";
 const Navbar: React.FC = () => {
   return (
     <Container>
-      <h1>Gui</h1>
+      <h1 >Gui</h1>
     </Container>
   );
 };

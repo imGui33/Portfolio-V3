@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   position:fixed;
   /* height: 80px; */
-
+  color: var(--black-300);
   opacity: 0.9;
   z-index: 3;
   display:flex;

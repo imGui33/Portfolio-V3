@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle`
         --gray-300: #65727a;
         --black-200: #2c2f33;
         --black-300: #23272a;
+        --blue-300: #5086c1;
+    }
+    html {
+        scroll-snap-type: y mandatory;
     }
     *{
         margin:0;
@@ -21,4 +25,4 @@ export const GlobalStyles = createGlobalStyle`
         background: none;
         outline: none;
     }
-`
+`;
