@@ -7,13 +7,15 @@ const ProgressBlog: React.FC = () => {
     const showProgress = () => {
         const scrollTop = document.documentElement.scrollTop
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-        const value = (scrollTop - height) * 100
+        const value = (scrollTop / height) * 100
         setScrollValue(value)
+        console.log(value);
+        
     }
     useEffect(() => {
         window.addEventListener('scroll', showProgress)
         return () => window.removeEventListener('scroll', showProgress)
-    })
+    }, [])
   return (
     <ProgressContainer>
       <div className="progress-line" style={{width:`${scrollValue}%`}}></div>

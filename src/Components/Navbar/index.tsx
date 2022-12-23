@@ -2,8 +2,8 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const Home: React.FC = () => {
+const Navbar: React.FC = () => {
   return <div />;
 }
 
-export default Home;
+export default Navbar;

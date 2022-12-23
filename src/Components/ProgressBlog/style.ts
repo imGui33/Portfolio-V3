@@ -5,7 +5,7 @@ export const ProgressContainer = styled.div`
     width: 100%;
     height: 6px;
     .progress-line{
-        height: 100px;
+        height: 100%;
         background-color: var(--gray-300);
     }
 `;
