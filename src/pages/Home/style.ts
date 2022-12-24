@@ -9,7 +9,8 @@ export const Container = styled.div`
   }
 `;
 export const Section = styled.section`
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+
   position: relative;
   width: 100%;
   height: 100vh;
@@ -37,25 +38,28 @@ export const Section = styled.section`
 `;
 export const ContainerContent = styled.div`
   color: var(--black-300);
-  min-width: 500px;
+  width: 100%;
   height: 500px;
+  /* background-color: red; */
   display: flex;
-  /* align-items: center; */  
-
+  align-items: center;
   justify-content: space-evenly;
-  flex-direction: column;
   z-index: 2;
+  flex-direction: column;
+
   li {
     list-style: none;
   }
-  /* .text {
+  .text {
+    z-index: 2;
     text-align: center;
-  } */
+  }
   .text h1 {
     font-size: 75px;
   }
   @media (max-width: 728px) {
     padding: 10px;
+
     .text h1 {
       font-size: 60px;
     }
@@ -65,6 +69,8 @@ export const PersonalInformation = styled.div`
   width: 100%;
   display: grid;
   align-items: center;
+  z-index: 2;
+  justify-content: center;
 
   grid-template-columns: 500px 300px;
 
@@ -82,6 +88,11 @@ export const PersonalInformation = styled.div`
       grid-template-columns: 150px 250px;
       align-items: center;
       /* justify-content:space-around; */
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
   .social-media {
@@ -109,8 +120,14 @@ export const PersonalInformation = styled.div`
     }
   }
   @media (max-width: 728px) {
-    grid-template-columns: 300px;
+    grid-template-columns: 1fr;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
+    .informations li {
+      word-wrap: break-word;
+      grid-template-columns: 150px 150px;
+    }
   }
 `;
 export const Insta = styled(AiFillInstagram)`

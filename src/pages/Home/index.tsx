@@ -30,9 +30,83 @@ const Home: React.FC = () => {
         <div className="bg">
           <Wave mask="url(#mask)" fill="#5086c1" className="waveBG"></Wave>
         </div>
-
+        <div>
+          {" "}
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+             
+              fpsLimit: 120,
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: "push",
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                  
+                },
+                modes: {
+                  push: {
+                    quantity: 4,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                  },
+                },
+              },
+              particles: {
+                color: {
+                  value: "#5086c1",
+                },
+                links: {
+                  color: "#121214",
+                  distance: 150,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                collisions: {
+                  enable: true,
+                },
+                move: {
+                  direction: "none",
+                  enable: true,
+                  outModes: {
+                    default: "destroy",
+                  },
+                  random: false,
+                  speed: 0.5,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                    area: 1800,
+                  },
+                  value: 30,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: "circle",
+                },
+                size: {
+                  value: { min: 1, max: 5 },
+                },
+              },
+              detectRetina: true,
+            }}
+          />
+        </div>
         <ContainerContent>
-       
           <div className="text">
             <h1>Guilherme Aguiar</h1>
             <span style={{ color: "var(--blue-300)" }}>
@@ -86,7 +160,7 @@ const Home: React.FC = () => {
         </div>
         <h1>heelo</h1>
       </Section>
-
+      <Section></Section>
       <Section></Section>
     </Container>
   );
