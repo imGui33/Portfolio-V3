@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     html {
         scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
+        scroll-behavior: 'smooth';
     }
     *{
         margin:0;
