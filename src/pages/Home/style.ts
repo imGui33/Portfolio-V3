@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 export const Section = styled.section`
   scroll-snap-align: start;
-
+  flex-direction:column;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -23,6 +23,7 @@ export const Section = styled.section`
     width: 100%;
     bottom: 0;
     height: 150px;
+    z-index:-1;
     .waveBG {
       width: 100%;
       height: 100%;
@@ -56,6 +57,13 @@ export const ContainerContent = styled.div`
   }
   .text h1 {
     font-size: 75px;
+  }
+  .text-about-me{
+    width: 50%;
+    text-align:justify;
+    h1{
+      font-size: 50px;
+    }
   }
   @media (max-width: 728px) {
     padding: 10px;
@@ -145,3 +153,8 @@ export const Youtube = styled(AiFillYoutube)`
   height: 30px;
   color: var(--black-300);
 `;
+export const TitleSec = styled.div`
+  h1{
+    font-size: 55px;
+  }
+`

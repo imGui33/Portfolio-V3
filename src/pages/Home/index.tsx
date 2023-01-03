@@ -8,6 +8,7 @@ import {
   Insta,
   GitHub,
   Youtube,
+  TitleSec,
 } from "./style";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -37,7 +38,6 @@ const Home: React.FC = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-             
               fpsLimit: 120,
               interactivity: {
                 events: {
@@ -45,11 +45,10 @@ const Home: React.FC = () => {
                     enable: true,
                     mode: "push",
                   },
-                  onHover: {
-                    enable: true,
-                    mode: "repulse",
-                  },
-                  
+                  // onHover: {
+                  //   enable: true,
+                  //   mode: "repulse",
+                  // },
                 },
                 modes: {
                   push: {
@@ -90,7 +89,7 @@ const Home: React.FC = () => {
                     enable: true,
                     area: 1800,
                   },
-                  value: 30,
+                  value: 50,
                 },
                 opacity: {
                   value: 0.5,
@@ -158,7 +157,17 @@ const Home: React.FC = () => {
         <div className="bg up">
           <Wave mask="url(#mask)" fill="#5086c1" className="waveBG"></Wave>
         </div>
-        <h1>heelo</h1>
+        <TitleSec>
+          <h1 style={{color:"white"}}>.Sobre-Mim</h1>
+        </TitleSec>
+        <ContainerContent>
+          <div className="text-about-me">
+            <h1>Meu nome é Guilherme Aguiar,</h1>
+            <p>
+              atualmente tenho 15 anos, nascido e criado em Pontes e Lacerda, Mato Grosso. Atualmente cursando Infórmatica, no Instituto Federal do Mato Grosso, uma escola que trabalha com cursos integrados, juntamente com máterias nativas do ensino médio. 
+            </p>
+          </div>
+        </ContainerContent>
       </Section>
       <Section></Section>
       <Section></Section>
